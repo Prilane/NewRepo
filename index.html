@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>April</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <!--link to js-->
+    <script defer src="js/main.js"></script>
+</head>
+<body style="margin-top: 5.8%;">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="allprojects.html">More Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container" id="home">
+        <!--profile header-->
+        <section class="glass">
+            <img id="profile" src="images/profile-pic.jpg" alt="April" class="profile-pic" height="200px" width="200px"/>
+            <h1>April Odhiambo</h1>
+            <p class="tagline">Web Developer | Graphic Designer | Video Editor | App Developer</p>
+        </section>
+        <!--About section-->
+        <section id="about" class="glass">
+            <h2>About me</h2>
+            <p>I am a Passionate Web Developer, a Graphic Designer, a Video Editor and an upcoming App Developer
+                <br>I believe in boosting and marketing or advertising businesses online, making a great impact for the business
+            </p>
+        </section>
+        <!--Projects list section-->
+        <section id="projects" class="glass">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Web Development</strong><p>A web developer who has created over 10 web pages with no casualties</p></li>
+                <li><strong>Graphic Design</strong><p>A skilled Graphic Designer </p></li>
+                <li><strong>Video Editing</strong><p>A Video editor with a 3-Year experience</p></li>
+            </ul>
+        </section>
+        <!--Featured projects section-->
+        <section class="glass">
+            <h2>Featured Projects</h2>
+            <div class="projects">
+                <img src="images/project1.jpg" width="100px" alt="Web Development"/>
+            </div>
+            <div class="project-info">
+                <h3>Web Development</h3>
+                <p>A very capturing course to study</p>
+            </div>
+            <div class="projects">
+                <img src="images/project2.jpg" width="100px" alt="Graphic Design"/>
+            </div>
+            <div class="project-info">
+                <h3>Graphic Design</h3>
+                <p>Time is also of the esssense. I do this in minutes.</p>
+            </div>
+            <div class="projects">
+                <img src="images/project3.jpg" width="100px" alt="Video Editing"/>
+            </div>
+            <div class="project-info">
+                <h3>Video Editing</h3>
+                <p>Making your videos worth watching.</p>
+            </div>
+            <button class="more-proj"><a href="allprojects.html">View All Projects</a></button>
+        </section>
+        <!--contact section-->
+        <section id="contact" class="glass">
+            <h2>Contact me</h2>
+            <form id="form" method="POST" action="/contact">
+                <label>Name:<br><input type="text" name="name" required /></label><br><br>
+                <label>E-mail:<br><input type="email" name="email" required /></label><br><br>
+                <label>Message:<br><textarea name="message" required></textarea></label><br><br>
+                <button id="submitBtn" type="submit">Send</button>
+            </form>
+             <div id="spinner" class="spinner"></div>
+        </section>
+        <!--Footer-->
+        <footer class="glass"><p>&copy; 2025 April Odhiambo Owino. All Rights Reserved<p></p></footer>
+    </div>
+    <div id="formOverlay">
+        <div class="popup" id="sending">Sending your message...</div>
+        
+    </div>
+</body>
+</html>
