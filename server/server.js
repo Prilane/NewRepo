@@ -29,7 +29,7 @@ const contactRoute = require('./routes/contact');
 const { log } = require('console');
 const { send } = require('process');
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT  || 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 console.log('ContactRoute is ', typeof contactRoute);
