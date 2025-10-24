@@ -42,11 +42,11 @@ window.addEventListener("scroll", revealOnScroll);
             const overlay = document.getElementById("formOverlay");
             const spinner = document.getElementById("spinner");
 
-            if (overlay) overlay.style.display = "flex";
+            if (overlay) overlay.style.display = "block";
             if (spinner) spinner.style.display = "block";
 
             try {
-                const res = await fetch("/contact", {
+                const res = await fetch("/.netlify/functions/contact", {
                     method: "POST",
                     headers: {"content-type": "application/x-www-form-urlencoded"},
                     body: new URLSearchParams(formData),

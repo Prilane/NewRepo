@@ -40,7 +40,7 @@ app.get('/', (req, res) =>{
     res.sendFile(path.join(__dirname, '..', 'index.html'));
 });
 //Handle 404 errors
-app.use((req, res) => {
+app.use((_req, res) => {
 res.status(404).send('<h1>404 Not Found</h1>');
 });
 //Handle 500 errors
